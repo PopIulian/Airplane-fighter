@@ -1,0 +1,33 @@
+#board {
+    position: relative;
+    width: 1250px;
+    height: 700px;
+    background: url('https://i.ytimg.com/vi/J0_0w5QgPLs/maxresdefault.jpg') repeat-y center center;
+    border: 4px solid #000;
+    overflow: hidden; /* Adăugăm overflow hidden pentru a nu arăta nimic în afara containerului */
+
+}
+
+.airplane {
+    position: absolute;
+    bottom: 20px;
+    top: 580px;
+    left: 625px;
+    width: 100px; /* Ajustează dimensiunea avionului după preferințe */
+    transition: left 0.1s;
+    transform: translateX(-50%);
+}
+
+.obstacle {
+    position: absolute;
+    width: 100px; /* Ajustează dimensiunea obstacolului după preferințe */
+    height: auto;
+}
+
+.bullet {
+    position: absolute;
+    width: 10px; /* Dimensiunea glonțului */
+    height: 20px; /* Dimensiunea glonțului */
+    background-color: red; /* Culoarea glonțului */
+    border-radius: 50%; /* Face glonțul rotund */
+}
